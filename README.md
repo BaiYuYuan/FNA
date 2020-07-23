@@ -55,7 +55,7 @@ The seed network MobileNetV2 is trained on ImageNet using the code of [DenseNAS]
 We provide the adapted parameters and `net_config` in checkpoint [RetinaNet](https://drive.google.com/open?id=1BatmfFQ6ArcYN3l8OD9epl3asRhjx1yx) and [SSDLite](https://drive.google.com/open?id=1iIzlctJj8VJgsCVlXEe6MVoq3SEza964). The complete model zoo is in [FNA_modelzoo](https://drive.google.com/open?id=10iH62XcE5AVGDXEa-yjeaAjK6isUh1QD). You can evaluate the checkpoint with the following script.
 
 * RetinaNet: `sh scripts/test_retinanet.sh`
-* SSDLite: `sh scripts/test_ssdlite.sh`
+* SSDLite: `sh scripts/test_ssdlite.sh`  python tools/voc_eval.py results.pkl ./configs/fna_ssdlite_retrain.py
 
 ## FNA on Semantic Segmentation
 
